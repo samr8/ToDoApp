@@ -1,6 +1,10 @@
-﻿namespace To_Do.Services
+﻿using ToDo.Dto;
+
+namespace ToDo.Services
 {
-    public class ITaskService
+    public interface ITaskService
     {
+        List<TaskDto> SelectAll();
+
     }
 }

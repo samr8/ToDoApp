@@ -1,4 +1,4 @@
-﻿namespace To_Do.Dto
+﻿namespace ToDo.Dto
 {
     public class TaskDto
     {
