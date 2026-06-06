@@ -6,8 +6,9 @@
         public string? TaskName { get; set; }
         public string? TaskDescription { get; set; }
         public short? TaskStatusId { get; set; }
-        public DateOnly? CreatedDate { get; set; }
-        public DateOnly? UpdatedDate { get; set; }
+        public string? TaskStatusName { get; set; }
+        public DateTime? CreatedDate { get; set; }
+        public DateTime? UpdatedDate { get; set; }
 
     }
 
