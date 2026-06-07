@@ -18,7 +18,7 @@ namespace ToDo.Repositoris
 
         private SqlConnection GetConnection()
         {
-            string connectionString = _configuration.GetConnectionString("DefaultConnection");
+            string? connectionString = _configuration.GetConnectionString("DefaultConnection");
 
             return new SqlConnection(connectionString);
         }
@@ -34,6 +34,12 @@ namespace ToDo.Repositoris
             ).ToList();
 
             return tasks;
+        }
+
+        public bool TaskUpsert(TaskDto task)
+        {
+            using var connection = GetConnection();
+
         }
     }
 }
